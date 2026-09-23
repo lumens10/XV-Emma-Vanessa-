@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mis XV — Nohemi</title>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=El+Messiri:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta
+        name="description"
+        content="Invitación a los XV años de Nohemi"
+    >
+<!-- =====================================================
+     VISTA PREVIA AL COMPARTIR
+===================================================== -->
+
+<meta
+    property="og:title"
+    content="Mis XV - Nohemi"
+>
+
+<meta
+    property="og:description"
+    content="Será un honor contar contigo en este día tan especial."
+>
+
+<meta
+    property="og:image"
+    content="https://lumens10.github.io/XV-Nohemi-prueba/images/previa.jpg"
+>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta
+    property="og:url"
+    content="https://lumens10.github.io/XV-Nohemi-prueba/"
+>
+
+<meta
+    property="og:type"
+    content="website"
+>
+
+<meta
+    property="og:site_name"
+    content="Mis XV - Nohemi"
+>
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PANTALLA DE APERTURA
+===================================================== -->
+
+<div id="opening" class="opening">
+
+    <div class="opening-content">
+
+        <!-- LOGO -->
+        <img
+            src="images/n sola2.png"
+            class="opening-logo"
+            alt="Nohemi"
+        >
+
+        <!-- MIS XV -->
+        <div class="opening-title">
+            MIS XV
+        </div>
+
+        <!-- BOTÓN -->
+        <button
+            id="openInvitation"
+            class="open-button"
+        >
+            Abrir invitación
+        </button>
+
+    </div>
+
+</div>
+
+<!-- =====================================================
+     MÚSICA
+===================================================== -->
+
+<audio
+    id="backgroundMusic"
+    loop
+>
+
+    <source
+        src="audio/cancion.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+<button
+    id="musicButton"
+    class="music-button"
+>
+    ♫
+</button>
+
+
+
+<!-- =====================================================
+     INVITACIÓN
+===================================================== -->
+
+<main
+    id="invitation"
+    class="invitation"
+>
+
+
+    <!-- =================================================
+         HERO
+         ESTE BLOQUE NO SE MODIFICA
+    ================================================== -->
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            
+            <span class="eyebrow">
+                MIS XV
+            </span>
+
+
+            <h1 data-name>
+                Nohemi
+            </h1>
+
+
+            <div class="gold-line"></div>
+
+
+            <p>
+                Una noche mágica,
+                un momento inolvidable.
+            </p>
+
+
+            <span class="hero-date">
+                19 · 12 · 2026
+            </span>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         INTRO
+         REVEAL = ANIMACIÓN AL HACER SCROLL
+    ================================================== -->
+
+    <section class="section intro reveal">
+
+        <span class="section-label">
+            CON MUCHO AMOR
+        </span>
+
+
+        <h2>
+            Hoy comienza<br>
+            una nueva etapa
+        </h2>
+
+
+        <div class="ornament">
+            ✦
+        </div>
+
+
+        <p>
+            Hay momentos en la vida que merecen
+            ser celebrados y compartidos con las
+            personas que más queremos.
+        </p>
+
+
+        <p>
+            Por eso quiero invitarte a celebrar
+            conmigo la llegada de mis XV años.
+        </p>
+
+    </section>
+
+  <!-- =====================================================
+     CUENTA REGRESIVA
+===================================================== -->
+
+<section class="countdown-section reveal">
+
+    <div class="countdown-content">
+
+        <!-- Texto principal del contador -->
+        <div class="countdown-title">
+            Faltan
+        </div>
+
+
+        <!-- Contenedor de los cuatro tiempos -->
+        <div id="countdown" class="countdown">
+
+            <!-- Días -->
+            <div class="count-item">
+
+                <span id="days">
+                    00
+                </span>
+
+                <small>
+                    Días
+                </small>
+
+            </div>
+
+
+            <!-- Separador -->
+            <div class="count-divider"></div>
+
+
+            <!-- Horas -->
+            <div class="count-item">
+
+                <span id="hours">
+                    00
+                </span>
+
+                <small>
+                    Horas
+                </small>
+
+            </div>
+
+
+            <!-- Separador -->
+            <div class="count-divider"></div>
+
+
+            <!-- Minutos -->
+            <div class="count-item">
+
+                <span id="minutes">
+                    00
+                </span>
+
+                <small>
+                    Minutos
+                </small>
+
+            </div>
+
+
+            <!-- Separador -->
+            <div class="count-divider"></div>
+
+
+            <!-- Segundos -->
+            <div class="count-item">
+
+                <span id="seconds">
+                    00
+                </span>
+
+                <small>
+                    Segundos
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- =================================================
+         FECHA
+    ================================================== -->
+
+    <section class="section date-section reveal">
+
+        <span class="section-label">
+            RESERVA LA FECHA
+        </span>
+
+
+        <h2>
+            19
+        </h2>
+
+
+        <div class="month">
+            DICIEMBRE
+        </div>
+
+
+        <div class="year">
+            2026
+        </div>
+
+        </div>
+
+    </section>
+
+
+   <!-- =================================================
+     CEREMONIA
+================================================== -->
+
+<section class="event-section ceremony reveal">
+
+    <div class="event-content">
+
+        <img
+            src="images/iglesiad.png"
+            alt="Parroquia"
+            class="event-image"
+        >
+
+
+        <span class="section-label">
+            CEREMONIA
+        </span>
+
+
+        <h2>
+            Parroquia<br>
+            Santiago Apóstol
+        </h2>
+
+
+        <div class="event-time">
+            11:00 AM
+        </div>
+
+
+        <a
+            href="https://goo.gl/maps/bRxn4gBVBFaoiZA67?coh=178571&entry=tt"
+            target="_blank"
+            class="gold-button"
+        >
+            Ver ubicación
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- =================================================
+         RECEPCIÓN
+    ================================================== -->
+
+    <section class="event-section reception reveal">
+
+        <div class="event-content">
+
+            <img
+    src="images/alfombrad.png"
+    alt="Parroquia"
+    class="event-image"
+        >
+            <span class="section-label">
+                RECEPCIÓN
+            </span>
+
+
+            <h2>
+                Salón<br>
+                Casa Nava
+            </h2>
+
+
+            <div class="event-time">
+                6:00 PM
+            </div>
+
+
+            <a
+                href="https://maps.app.goo.gl/1sqdkLtduQHUvZk4A"
+                target="_blank"
+                class="gold-button"
+            >
+                Ver ubicación
+            </a>
+
+        </div>
+
+    </section>
+
+ <!-- =================================================
+         FAMILIA
+    ================================================== -->
+
+    <section class="section family-section reveal">
+
+        <span class="section-label">
+           
+        </span>
+
+
+        <h2>
+            Mis padres
+        </h2>
+
+
+        <div class="family-card">
+
+            <p data-father>
+                Luis Angel Rangel Rincon
+            </p>
+
+            <p data-mother>
+                Gladiola Flores Antonio
+            </p>
+
+        </div>
+
+
+        <h2 class="sub-heading">
+            Mis padrinos
+        </h2>
+
+
+        <div class="family-card">
+
+            <p data-godfather>
+                Mauricio Aldair Ramírez Luis
+            </p>
+
+
+            <p data-godmother>
+                Cohinda Rodríguez Rojas
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =================================================
+         GALERÍA
+    ================================================== -->
+
+    <section class="section gallery-section reveal">
+
+        <span class="section-label">
+            MOMENTOS
+        </span>
+
+
+        <h2>
+            Un poco de mí
+        </h2>
+
+
+        <div class="gallery">
+
+
+            <div class="gallery-item large">
+
+                <img
+                    src="images/gris1.jpg"
+                    alt="Nohemi"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gris5.jpg"
+                    alt="Nohemi"
+                >
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="images/gris2.jpg"
+                    alt="Nohemi"
+                >
+
+            </div>
+
+
+            <div class="gallery-item wide">
+
+                <img
+                    src="images/gris4.jpg"
+                    alt="Nohemi"
+                >
+
+            </div>
+<div class="gallery-item">
+    <img
+        src="images/gris3.jpg"
+        alt="Nohemi"
+    >
+</div>
+
+<div class="gallery-item">
+    <img
+        src="images/gris6.jpg"
+        alt="Nohemi"
+    >
+</div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         VESTIMENTA
+    ================================================== -->
+
+    <section class="section dress-section reveal">
+
+        <span class="section-label">
+            CÓDIGO DE VESTIMENTA
+        </span>
+
+
+        <div class="dress-icon">
+    <img src="images/atuendo.png" alt="Código de vestimenta">
+</div>
+
+
+        <h2>
+            Formal De Noche
+        </h2>
+
+
+        <p>
+            Celebremos juntos esta noche
+            vistiendo nuestros mejores atuendos.
+            (color vino y beige queda reservado para la quinceañera)
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         LLUVIA DE SOBRES
+    ================================================== -->
+
+    <section class="section envelopes-section reveal">
+
+        <span class="section-label">
+            UN DETALLE ESPECIAL
+        </span>
+
+
+        <div class="envelope-icon">
+    <img src="images/dinero.png" alt="Lluvia de sobres">
+</div>
+
+
+        <h2>
+            Lluvia de sobres
+        </h2>
+
+
+        <p>
+            Tu presencia es el mejor regalo.
+            Si deseas tener un detalle conmigo,
+            habrá un espacio para recibir
+            lluvia de sobres.
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PROGRAMA
+    ================================================== -->
+
+    <section class="section timeline-section reveal">
+
+        <span class="section-label">
+            EL GRAN DÍA
+        </span>
+
+
+        <h2>
+            Programa
+        </h2>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <span>
+                    11:00 AM
+                </span>
+
+                <strong>
+                    Ceremonia
+                </strong>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span>
+                    6:00 PM
+                </span>
+
+                <strong>
+                    Recepción
+                </strong>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <span>
+                    Más adelante
+                </span>
+
+                <strong>
+                    Una noche inolvidable
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+   <!-- =================================================
+         PASE DE INVITACIÓN
+    ================================================== -->
+
+    <section class="pass-section reveal">
+
+        <div class="pass-card">
+
+            <span class="section-label">
+                PASE DE INVITACIÓN
+            </span>
+
+
+            <h2>
+                Mis XV
+            </h2>
+
+
+            <div class="pass-name">
+                Nohemi
+            </div>
+
+
+            <div class="pass-line"></div>
+
+
+            <p>
+                Pase para
+            </p>
+
+
+            <strong class="pass-number">
+                2
+            </strong>
+
+
+            <p>
+                personas
+            </p>
+
+        </div>
+
+    </section>
+
+
+</footer>
+    <!-- =================================================
+         CONFIRMACIÓN
+    ================================================== -->
+
+    <section class="section rsvp-section reveal">
+
+        <span class="section-label">
+            SERÁ UN HONOR CONTAR CONTIGO
+        </span>
+
+
+        <h2>
+            ¿Nos acompañas?
+        </h2>
+
+
+        <p>
+            Confirma tu asistencia
+            antes del evento.
+        </p>
+
+
+        <a
+            id="whatsappButton"
+            href="#"
+            target="_blank"
+            class="whatsapp-button"
+        >
+            Confirmar por WhatsApp
+        </a>
+
+    </section>
+
+   <!-- =================================================
+     PIE DE INVITACIÓN
+================================================== -->
+
+<footer class="footer reveal">
+
+      <span>
+        Con amor
+    </span>
+    
+    <div class="ornament">
+        <img src="images/N logo .png" alt="Ornamento">
+    </div>
+
+
+    <h2>
+        Nohemi
+    </h2>
+
+
+    <p>
+        Mis XV · 2026
+    </p>
+
+</footer>
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/config.js"></script>
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
