@@ -1,19 +1,19 @@
 const invitation = {
     quinceanera: {
-        name: "Nohemi",
+        name: "Emma Vanessa",
         age: 15
     },
 
     event: {
-        date: "2026-12-19T18:00:00",
-        displayDate: "19 de diciembre de 2026",
+        date: "2027-02-19T18:00:00",
+        displayDate: "19 de febrero de 2027",
         ceremonyTime: "11:00 AM",
         receptionTime: "6:00 PM"
     },
 
     family: {
-        father: "Luis Angel Rangel Rincon",
-        mother: "Gladiola Flores Antonio",
+        father: "Emerzon Jonguitud Hernández",
+        mother: "Perla Yeyectzy Acosta Martínez",
         godfather: "Mauricio Aldair Ramírez Luis",
         godmother: "Cohinda Rodríguez Rojas"
     },
@@ -43,7 +43,7 @@ const invitation = {
     ===================================================== */
 
     option1: {
-        phone: "5579220405"
+        phone: "7891059345"
     },
 
     option2: {
@@ -56,7 +56,7 @@ const invitation = {
     ===================================================== */
 
     message:
-        "Hola, quiero confirmar mi asistencia a los XV años de Nohemi."
+        "Hola, quiero confirmar mi asistencia a los XV años de Emma Vanessa."
 
 },
 
