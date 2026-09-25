@@ -778,21 +778,14 @@ attendanceOptions.forEach(
     }
 );
 /* =====================================================
-   WHATSAPP — CONFIRMACIÓN SEGÚN OPCIÓN
+   WHATSAPP — CONFIRMACIÓN DEL FORMULARIO
 ===================================================== */
 
 if (whatsappButton) {
 
     /*
-       Leer la opción desde el enlace.
-
-       Ejemplos:
-
-       ?pase=2&opcion=1
-       ?pase=3&opcion=1
-
-       ?pase=2&opcion=2
-       ?pase=4&opcion=2
+       Leer la opción de WhatsApp
+       desde el enlace, si existe.
     */
 
     const opcionParam =
@@ -800,8 +793,8 @@ if (whatsappButton) {
 
 
     /*
-       Seleccionar automáticamente
-       el número correspondiente.
+       Seleccionar el número
+       correspondiente.
     */
 
     let whatsappPhone;
@@ -816,11 +809,6 @@ if (whatsappButton) {
 
     } else {
 
-        /*
-           Opción 1 también funciona
-           como opción predeterminada.
-        */
-
         whatsappPhone =
             whatsappOption1;
 
@@ -828,29 +816,243 @@ if (whatsappButton) {
 
 
     /*
-       Preparar mensaje.
+       Cuando la persona pulse
+       el botón de WhatsApp.
     */
 
-    const encodedMessage =
-        encodeURIComponent(
-            whatsappMessage
-        );
+    whatsappButton.addEventListener(
+        "click",
+        function (event) {
+
+            /*
+               Evitar que el botón
+               abra el enlace anterior.
+            */
+
+            event.preventDefault();
 
 
-    /*
-       Crear enlace de WhatsApp.
-    */
+            /*
+               Obtener el nombre
+               escrito por el invitado.
+            */
 
-    whatsappButton.href =
-        `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+            const guestNameInput =
+                document.getElementById(
+                    "guestName"
+                );
 
 
-    whatsappButton.target =
-        "_blank";
+            const guestName =
+                guestNameInput
+                    ? guestNameInput.value.trim()
+                    : "";
 
 
-    whatsappButton.rel =
-        "noopener noreferrer";
+            /*
+               Obtener la respuesta.
+            */
+
+            const selectedAttendance =
+                document.querySelector(
+                    'input[name="attendance"]:checked'
+                );
+
+
+            /*
+               Comprobar que escribió
+               su nombre.
+            */
+
+            if (!guestName) {
+
+                alert(
+                    "Por favor, escribe tu nombre."
+                );
+
+                return;
+
+            }
+
+
+            /*
+               Comprobar que eligió
+               una respuesta.
+            */
+
+            if (!selectedAttendance) {
+
+                alert(
+                    "Por favor, selecciona tu respuesta."
+                );
+
+                return;
+
+            }
+
+
+            /*
+               ========================================
+               SI NO ASISTIRÁ
+               ========================================
+            */
+
+            if (
+                selectedAttendance.value ===
+                "no"
+            ) {
+
+                const message =
+                    `Hola soy ${guestName}, lo siento, no podré asistir, mis mejores deseos, pásatela increíble.`;
+
+
+                const encodedMessage =
+                    encodeURIComponent(
+                        message
+                    );
+
+
+                const whatsappUrl =
+                    `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+
+
+                window.open(
+                    whatsappUrl,
+                    "_blank"
+                );
+
+
+                return;
+
+            }
+
+
+            /*
+               ========================================
+               SI SÍ ASISTIRÁ
+               ========================================
+            */
+
+
+            /*
+               Buscar todos los campos
+               de acompañantes.
+            */
+
+            const companionInputs =
+                document.querySelectorAll(
+                    ".companion-input"
+                );
+
+
+            const companionNames = [];
+
+
+            companionInputs.forEach(
+                input => {
+
+                    const name =
+                        input.value.trim();
+
+
+                    if (name) {
+
+                        companionNames.push(
+                            name
+                        );
+
+                    }
+
+                }
+            );
+
+
+            /*
+               Si el pase permite
+               acompañantes, pedimos
+               que se escriban.
+            */
+
+            if (
+                guestCount > 1 &&
+                companionNames.length <
+                    guestCount - 1
+            ) {
+
+                alert(
+                    "Por favor, escribe el nombre de todos tus acompañantes."
+                );
+
+                return;
+
+            }
+
+
+            /*
+               ========================================
+               CREAR MENSAJE
+               ========================================
+            */
+
+            let message;
+
+
+            /*
+               Pase individual.
+            */
+
+            if (
+                guestCount <= 1
+            ) {
+
+                message =
+                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa.`;
+
+            }
+
+
+            /*
+               Pase con acompañantes.
+            */
+
+            else {
+
+                message =
+                    `Hola soy ${guestName}, quiero confirmar mi asistencia a los XV años de Emma Vanessa, me acompaña(n) ${companionNames.join(", ")}.`;
+
+            }
+
+
+            /*
+               Convertir el mensaje
+               para utilizarlo en WhatsApp.
+            */
+
+            const encodedMessage =
+                encodeURIComponent(
+                    message
+                );
+
+
+            /*
+               Crear el enlace final.
+            */
+
+            const whatsappUrl =
+                `https://wa.me/${whatsappPhone}?text=${encodedMessage}`;
+
+
+            /*
+               Abrir WhatsApp.
+            */
+
+            window.open(
+                whatsappUrl,
+                "_blank"
+            );
+
+        }
+    );
 
 }
 
