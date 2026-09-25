@@ -925,6 +925,39 @@
 --rsvp-button-from-y: 45px;
 
 
+ /* =========================================================
+   HOTELES
+========================================================= */
+/* ESPACIO DEL BLOQUE */
+--hotels-space-top: 80px;
+--hotels-space-bottom: 100px;
+/* POSICIÓN DEL BLOQUE */
+--hotels-position-x: 0px;
+--hotels-position-y: 0px;
+/* ANCHO Y ESPACIO LATERAL */
+--hotels-width: 100%;
+--hotels-padding-x: 20px;
+/* TIPOGRAFÍA */
+--hotels-label-size: 12px;
+--hotels-title-size: 42px;
+--hotels-description-size: 16px;
+--hotel-name-size: 24px;
+/* COLORES */
+--hotels-label-color: #c9a45c;
+--hotels-title-color: #f7f2e9;
+--hotels-description-color: rgba(247, 242, 233, .75);
+--hotel-name-color: #f7f2e9;
+/* ESPACIOS INTERNOS */
+--hotels-title-space-top: 20px;
+--hotels-description-space-top: 15px;
+--hotels-list-space-top: 45px;
+--hotels-gap: 40px;
+--hotel-button-space-top: 20px;
+/* BOTONES */
+--hotel-button-padding-y: 12px;
+--hotel-button-padding-x: 25px;
+--hotel-button-font-size: 13px;
+
  
     /* ===== MÚSICA ===== */
     --music-right: 20px;
@@ -4968,6 +5001,108 @@ text-transform: uppercase;
 
 .rsvp-section.animate-content .whatsapp-button {
     transition-delay: var(--rsvp-button-delay);
+}
+
+/* =========================================================
+   HOTELES — CONTROL DEL BLOQUE
+========================================================= */
+
+.hotels-section {
+
+    width: var(--hotels-width);
+
+    padding-left: var(--hotels-padding-x);
+    padding-right: var(--hotels-padding-x);
+
+    margin-top: var(--hotels-space-top);
+    margin-bottom: var(--hotels-space-bottom);
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            var(--hotels-position-y)
+        );
+}
+
+
+/* =========================================================
+   ETIQUETA
+========================================================= */
+
+.hotels-section .section-label {
+
+    color: var(--hotels-label-color);
+
+    font-size:
+        var(--hotels-label-size);
+}
+
+
+/* =========================================================
+   TÍTULO / DESCRIPCIÓN
+========================================================= */
+
+.hotels-section p {
+
+    color: var(--hotels-description-color);
+
+    font-size:
+        var(--hotels-description-size);
+
+    margin-top:
+        var(--hotels-description-space-top);
+}
+
+
+/* =========================================================
+   LISTA DE HOTELES
+========================================================= */
+
+.hotel-list {
+
+    margin-top:
+        var(--hotels-list-space-top);
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--hotels-gap);
+}
+
+
+/* =========================================================
+   NOMBRE DEL HOTEL
+========================================================= */
+
+.hotel-card h3 {
+
+    color:
+        var(--hotel-name-color);
+
+    font-size:
+        var(--hotel-name-size);
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   BOTÓN
+========================================================= */
+
+.hotel-card .gold-button {
+
+    margin-top:
+        var(--hotel-button-space-top);
+
+    padding:
+        var(--hotel-button-padding-y)
+        var(--hotel-button-padding-x);
+
+    font-size:
+        var(--hotel-button-font-size);
 }
 /* =========================================================
    MÚSICA
