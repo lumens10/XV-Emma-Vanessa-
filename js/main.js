@@ -556,7 +556,7 @@ const paseParam =
 
 const guestCount =
     Number.isInteger(paseParam) &&
-    paseParam >= 2 &&
+    paseParam >= 1 &&
     paseParam <= 6
 
         ? paseParam
@@ -580,7 +580,203 @@ if (passNumber) {
         guestCount;
 
 }
+/* =====================================================
+   FORMULARIO — ACOMPAÑANTES
+===================================================== */
 
+const companionsField =
+    document.getElementById(
+        "companionsField"
+    );
+
+
+const companionsContainer =
+    document.getElementById(
+        "companionsContainer"
+    );
+
+
+const attendanceOptions =
+    document.querySelectorAll(
+        'input[name="attendance"]'
+    );
+
+
+/*
+   Al comenzar ocultamos
+   el campo de acompañantes.
+*/
+
+if (companionsField) {
+
+    companionsField.style.display =
+        "none";
+
+}
+
+
+/*
+   Crear los campos
+   de acompañantes.
+*/
+
+function createCompanionFields() {
+
+    if (!companionsContainer) {
+        return;
+    }
+
+
+    /*
+       Limpiar campos anteriores.
+    */
+
+    companionsContainer.innerHTML =
+        "";
+
+
+    /*
+       Si el pase es para una sola
+       persona, no hay acompañantes.
+    */
+
+    if (guestCount <= 1) {
+        return;
+    }
+
+
+    /*
+       El número de acompañantes
+       es el número del pase
+       menos la persona principal.
+    */
+
+    const companionCount =
+        guestCount - 1;
+
+
+    /*
+       Crear cada campo.
+    */
+
+    for (
+        let i = 1;
+        i <= companionCount;
+        i++
+    ) {
+
+        const input =
+            document.createElement(
+                "input"
+            );
+
+
+        input.type =
+            "text";
+
+
+        input.className =
+            "companion-input";
+
+
+        input.placeholder =
+            "Nombre y apellido";
+
+
+        input.id =
+            `companion${i}`;
+
+
+        input.autocomplete =
+            "off";
+
+
+        companionsContainer.appendChild(
+            input
+        );
+
+    }
+
+}
+
+
+/*
+   Vigilar la respuesta
+   del invitado.
+*/
+
+attendanceOptions.forEach(
+    option => {
+
+        option.addEventListener(
+            "change",
+            () => {
+
+                /*
+                   Si NO asistirá:
+                   ocultamos acompañantes.
+                */
+
+                if (
+                    option.value ===
+                    "no" &&
+                    option.checked
+                ) {
+
+                    if (companionsField) {
+
+                        companionsField.style.display =
+                            "none";
+
+                    }
+
+
+                    if (companionsContainer) {
+
+                        companionsContainer.innerHTML =
+                            "";
+
+                    }
+
+                }
+
+
+                /*
+                   Si SÍ asistirá:
+                   mostramos acompañantes
+                   solamente si el pase
+                   permite acompañantes.
+                */
+
+                if (
+                    option.value ===
+                    "yes" &&
+                    option.checked
+                ) {
+
+                    if (
+                        guestCount > 1
+                    ) {
+
+                        createCompanionFields();
+
+
+                        if (companionsField) {
+
+                            companionsField.style.display =
+                                "block";
+
+                        }
+
+                    }
+
+                }
+
+            }
+        );
+
+    }
+);
 /* =====================================================
    WHATSAPP — CONFIRMACIÓN SEGÚN OPCIÓN
 ===================================================== */
