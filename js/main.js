@@ -61,7 +61,9 @@ const ceremonyTime = invitation.event.ceremonyTime;
 const receptionTime = invitation.event.receptionTime;
 
 const dressCode = invitation.dressCode;
-
+   
+const hotels = invitation.hotels;
+   
 const whatsappOption1 =
     invitation.rsvp.option1.phone;
 
