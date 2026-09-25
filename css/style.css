@@ -5041,7 +5041,183 @@ text-transform: uppercase;
 .rsvp-section.animate-content .whatsapp-button {
     transition-delay: var(--rsvp-button-delay);
 }
+/* =========================================================
+   FORMULARIO DE CONFIRMACIÓN
+========================================================= */
 
+.rsvp-form {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin:
+        var(--rsvp-form-space-top)
+        auto
+        0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-form-gap);
+
+}
+
+
+/* =========================================
+   CADA CAMPO
+========================================= */
+
+.rsvp-field {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-field-gap);
+
+}
+
+
+/* =========================================
+   ETIQUETAS
+========================================= */
+
+.rsvp-field label,
+.rsvp-label {
+
+    color:
+        var(--rsvp-label-color);
+
+    font-size:
+        var(--rsvp-label-size);
+
+}
+
+
+/* =========================================
+   CAMPOS DE TEXTO
+========================================= */
+
+.rsvp-field input[type="text"] {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding:
+        var(--rsvp-input-padding-y)
+        var(--rsvp-input-padding-x);
+
+    border:
+        1px solid
+        var(--rsvp-input-border-color);
+
+    border-radius:
+        var(--rsvp-input-radius);
+
+    background:
+        var(--rsvp-input-bg);
+
+    color:
+        var(--rsvp-input-color);
+
+    font-size:
+        var(--rsvp-input-size);
+
+    outline: none;
+
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.rsvp-field input::placeholder {
+
+    color:
+        var(--rsvp-placeholder-color);
+
+}
+
+
+/* =========================================
+   CUANDO SE SELECCIONA EL CAMPO
+========================================= */
+
+.rsvp-field input[type="text"]:focus {
+
+    border-color:
+        var(--rsvp-input-focus-color);
+
+}
+
+
+/* =========================================
+   OPCIONES DE RESPUESTA
+========================================= */
+
+.rsvp-option {
+
+    display: flex;
+
+    flex-direction: row !important;
+
+    align-items: center;
+
+    gap:
+        var(--rsvp-option-gap);
+
+    color:
+        var(--rsvp-option-color);
+
+    font-size:
+        var(--rsvp-option-size);
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   RADIO
+========================================= */
+
+.rsvp-option input[type="radio"] {
+
+    width:
+        var(--rsvp-radio-size);
+
+    height:
+        var(--rsvp-radio-size);
+
+    margin: 0;
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================
+   ACOMPAÑANTES
+========================================= */
+
+.companions-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap:
+        var(--rsvp-companion-gap);
+
+}
 /* =========================================================
    HOTELES — CONTROL DEL BLOQUE
 ========================================================= */
