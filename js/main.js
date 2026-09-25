@@ -194,6 +194,61 @@ if (dressHeading) {
     dressHeading.textContent = dressCode;
 }
 
+/* =====================================================
+   HOTELES
+===================================================== */
+
+const hotelsTitle =
+    document.querySelector("[data-hotels-title]");
+
+if (hotelsTitle) {
+    hotelsTitle.textContent = hotels.title;
+}
+
+
+const hotelsDescription =
+    document.querySelector("[data-hotels-description]");
+
+if (hotelsDescription) {
+    hotelsDescription.textContent =
+        hotels.description;
+}
+
+
+const hotel1Name =
+    document.querySelector("[data-hotel1-name]");
+
+if (hotel1Name) {
+    hotel1Name.textContent =
+        hotels.hotel1.name;
+}
+
+
+const hotel1Map =
+    document.querySelector("[data-hotel1-map]");
+
+if (hotel1Map) {
+    hotel1Map.href =
+        hotels.hotel1.maps;
+}
+
+
+const hotel2Name =
+    document.querySelector("[data-hotel2-name]");
+
+if (hotel2Name) {
+    hotel2Name.textContent =
+        hotels.hotel2.name;
+}
+
+
+const hotel2Map =
+    document.querySelector("[data-hotel2-map]");
+
+if (hotel2Map) {
+    hotel2Map.href =
+        hotels.hotel2.maps;
+}
 
 /* =====================================================
    PANTALLA DE APERTURA
