@@ -5018,7 +5018,53 @@ text-transform: uppercase;
             var(--rsvp-button-from-y)
         );
 }
+/* =========================================================
+   ANIMACIÓN INDIVIDUAL — FORMULARIO RSVP
+========================================================= */
 
+
+/* =========================================================
+   ESTADO INICIAL
+========================================================= */
+
+.rsvp-form,
+.rsvp-form .rsvp-field,
+.rsvp-form .whatsapp-button {
+
+    opacity: 0;
+
+    transition:
+        opacity var(--rsvp-form-anim-duration)
+        var(--rsvp-anim-ease),
+
+        transform var(--rsvp-form-anim-duration)
+        var(--rsvp-anim-ease);
+
+}
+
+
+/* =========================================================
+   POSICIÓN INICIAL
+========================================================= */
+
+.rsvp-form {
+
+    transform:
+        translateY(
+            var(--rsvp-form-anim-distance)
+        );
+
+}
+
+
+.rsvp-form .rsvp-field {
+
+    transform:
+        translateY(
+            var(--rsvp-form-anim-distance)
+        );
+
+}
 
 /* =========================================================
    ESTADO FINAL
@@ -5230,53 +5276,6 @@ text-transform: uppercase;
 
 }
 
-/* =========================================================
-   ANIMACIÓN INDIVIDUAL — FORMULARIO RSVP
-========================================================= */
-
-
-/* =========================================================
-   ESTADO INICIAL
-========================================================= */
-
-.rsvp-form,
-.rsvp-form .rsvp-field,
-.rsvp-form .whatsapp-button {
-
-    opacity: 0;
-
-    transition:
-        opacity var(--rsvp-form-anim-duration)
-        var(--rsvp-anim-ease),
-
-        transform var(--rsvp-form-anim-duration)
-        var(--rsvp-anim-ease);
-
-}
-
-
-/* =========================================================
-   POSICIÓN INICIAL
-========================================================= */
-
-.rsvp-form {
-
-    transform:
-        translateY(
-            var(--rsvp-form-anim-distance)
-        );
-
-}
-
-
-.rsvp-form .rsvp-field {
-
-    transform:
-        translateY(
-            var(--rsvp-form-anim-distance)
-        );
-
-}
 /* =========================================================
    HOTELES — CONTROL DEL BLOQUE
 ========================================================= */
