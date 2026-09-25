@@ -29,7 +29,24 @@ const invitation = {
     },
 
     dressCode: "Formal De Noche",
+    
+hotels: {
+    title: "Sugerencia de hotel",
 
+    description:
+        "Te compartimos algunas opciones de hoteles cercanos al evento.",
+
+    hotel1: {
+        name: "Hotel Posada San Javier",
+        maps: "https://maps.app.goo.gl/9BVVSxF3g5DiYNG7A"
+    },
+
+    hotel2: {
+        name: "Hotel Perla Escondida",
+        maps: "https://maps.app.goo.gl/85Lb1uKWWhpkdGVN9"
+    }
+},
+    
     music: {
         title: "Love Story",
         artist: "Indila",
