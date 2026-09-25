@@ -953,6 +953,17 @@
 --rsvp-companion-gap: 12px;
 /* BOTÓN */
 --rsvp-button-space-top: 10px;
+/* =========================================================
+   ANIMACIÓN DEL FORMULARIO RSVP
+========================================================= */
+--rsvp-form-anim-distance: 30px;
+--rsvp-form-anim-duration: 0.9s;
+/* RETRASOS */
+--rsvp-form-delay: 0.45s;
+--rsvp-name-delay: 0.55s;
+--rsvp-response-delay: 0.75s;
+--rsvp-companions-delay: 1.00s;
+--rsvp-button-form-delay: 1.25s;
 
  /* =========================================================
    HOTELES
@@ -5216,6 +5227,54 @@ text-transform: uppercase;
 
     gap:
         var(--rsvp-companion-gap);
+
+}
+
+/* =========================================================
+   ANIMACIÓN INDIVIDUAL — FORMULARIO RSVP
+========================================================= */
+
+
+/* =========================================================
+   ESTADO INICIAL
+========================================================= */
+
+.rsvp-form,
+.rsvp-form .rsvp-field,
+.rsvp-form .whatsapp-button {
+
+    opacity: 0;
+
+    transition:
+        opacity var(--rsvp-form-anim-duration)
+        var(--rsvp-anim-ease),
+
+        transform var(--rsvp-form-anim-duration)
+        var(--rsvp-anim-ease);
+
+}
+
+
+/* =========================================================
+   POSICIÓN INICIAL
+========================================================= */
+
+.rsvp-form {
+
+    transform:
+        translateY(
+            var(--rsvp-form-anim-distance)
+        );
+
+}
+
+
+.rsvp-form .rsvp-field {
+
+    transform:
+        translateY(
+            var(--rsvp-form-anim-distance)
+        );
 
 }
 /* =========================================================
