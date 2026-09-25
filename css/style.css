@@ -5104,6 +5104,70 @@ text-transform: uppercase;
     font-size:
         var(--hotel-button-font-size);
 }
+
+/* =========================================================
+   HOTELES — ANIMACIÓN DEL BLOQUE
+========================================================= */
+
+.hotels-section {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) + 70px)
+        );
+
+    transition:
+        opacity 0.9s ease,
+        transform 1s ease;
+}
+
+
+/* =========================================================
+   BLOQUE CUANDO ENTRA
+========================================================= */
+
+.hotels-section.visible {
+
+    opacity: 1;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            var(--hotels-position-y)
+        );
+}
+
+
+/* =========================================================
+   BLOQUE CUANDO SALE
+========================================================= */
+
+.hotels-section.exit-up {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) - 60px)
+        );
+}
+
+
+.hotels-section.exit-down {
+
+    opacity: 0;
+
+    transform:
+        translate(
+            var(--hotels-position-x),
+            calc(var(--hotels-position-y) + 60px)
+        );
+}
+
 /* =========================================================
    MÚSICA
 ========================================================= */
