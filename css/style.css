@@ -5067,6 +5067,80 @@ text-transform: uppercase;
 }
 
 /* =========================================================
+   ESTADO FINAL — FORMULARIO RSVP
+========================================================= */
+
+.rsvp-section.animate-content .rsvp-form,
+.rsvp-section.animate-content .rsvp-form .rsvp-field,
+.rsvp-section.animate-content .rsvp-form .whatsapp-button {
+
+    opacity: 1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================================
+   RETRASOS — FORMULARIO RSVP
+========================================================= */
+
+
+/* FORMULARIO */
+
+.rsvp-section.animate-content .rsvp-form {
+
+    transition-delay:
+        var(--rsvp-form-delay);
+
+}
+
+
+/* NOMBRE */
+
+.rsvp-section.animate-content
+.rsvp-form .rsvp-field:nth-child(1) {
+
+    transition-delay:
+        var(--rsvp-name-delay);
+
+}
+
+
+/* RESPUESTA */
+
+.rsvp-section.animate-content
+.rsvp-form .rsvp-field:nth-child(2) {
+
+    transition-delay:
+        var(--rsvp-response-delay);
+
+}
+
+
+/* ACOMPAÑANTES */
+
+.rsvp-section.animate-content
+.rsvp-form .rsvp-field:nth-child(3) {
+
+    transition-delay:
+        var(--rsvp-companions-delay);
+
+}
+
+
+/* BOTÓN */
+
+.rsvp-section.animate-content
+.rsvp-form .whatsapp-button {
+
+    transition-delay:
+        var(--rsvp-button-form-delay);
+
+}
+
+/* =========================================================
    ESTADO FINAL
 ========================================================= */
 
