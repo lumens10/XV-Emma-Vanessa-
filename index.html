@@ -712,27 +712,120 @@
 
 
 </footer>
-    <!-- =================================================
-         CONFIRMACIÓN
-    ================================================== -->
+  <!-- =================================================
+     CONFIRMACIÓN
+================================================== -->
 
-    <section class="section rsvp-section reveal">
+<section class="section rsvp-section reveal">
 
-        <span class="section-label">
-            SERÁ UN HONOR CONTAR CONTIGO
-        </span>
-
-
-        <h2>
-            ¿Nos acompañas?
-        </h2>
+    <span class="section-label">
+        SERÁ UN HONOR CONTAR CONTIGO
+    </span>
 
 
-        <p>
-            Confirma tu asistencia
-            antes del evento.
-        </p>
+    <h2>
+        ¿Nos acompañas?
+    </h2>
 
+
+    <p>
+        Confirma tu asistencia
+        antes del evento.
+    </p>
+
+
+    <!-- =============================================
+         FORMULARIO DE CONFIRMACIÓN
+    ============================================== -->
+
+    <div class="rsvp-form">
+
+
+        <!-- NOMBRE -->
+
+        <div class="rsvp-field">
+
+            <label for="guestName">
+                Nombre
+            </label>
+
+            <input
+                type="text"
+                id="guestName"
+                placeholder="Ingresa tu nombre"
+                autocomplete="name"
+            >
+
+        </div>
+
+
+        <!-- RESPUESTA -->
+
+        <div class="rsvp-field">
+
+            <span class="rsvp-label">
+                Respuesta
+            </span>
+
+
+            <label class="rsvp-option">
+
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="no"
+                >
+
+                <span>
+                    Lo siento, no podré asistir.
+                </span>
+
+            </label>
+
+
+            <label class="rsvp-option">
+
+                <input
+                    type="radio"
+                    name="attendance"
+                    value="yes"
+                >
+
+                <span>
+                    ¡Claro, ahí estaré!
+                </span>
+
+            </label>
+
+        </div>
+
+
+        <!-- =========================================
+             ACOMPAÑANTES
+
+             JAVASCRIPT DECIDIRÁ CUÁNDO MOSTRARLO
+        ========================================== -->
+
+        <div
+            id="companionsField"
+            class="rsvp-field companions-field"
+        >
+
+            <span class="rsvp-label">
+                Nombre(s) de acompañante(s)
+            </span>
+
+
+            <div
+                id="companionsContainer"
+                class="companions-container"
+            >
+            </div>
+
+        </div>
+
+
+        <!-- BOTÓN -->
 
         <a
             id="whatsappButton"
@@ -743,9 +836,10 @@
             Confirmar por WhatsApp
         </a>
 
-    </section>
 
-    
+    </div>
+
+</section>
 <!-- =================================================
     SUGERENCIA DE HOTEL 
      ================================================= -->
