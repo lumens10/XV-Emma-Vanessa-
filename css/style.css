@@ -5167,7 +5167,57 @@ text-transform: uppercase;
             calc(var(--hotels-position-y) + 60px)
         );
 }
+/* =========================================================
+   HOTELES — ANIMACIÓN DEL CONTENIDO
+========================================================= */
 
+.hotels-section .section-label,
+.hotels-section > p,
+.hotels-section .hotel-card {
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+/* =========================================================
+   CUANDO EL BLOQUE ESTÁ ACTIVO
+========================================================= */
+
+.hotels-section.visible .section-label,
+.hotels-section.visible > p,
+.hotels-section.visible .hotel-card {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RETRASOS
+========================================================= */
+
+.hotels-section.visible .section-label {
+    transition-delay: 0.15s;
+}
+
+.hotels-section.visible > p {
+    transition-delay: 0.30s;
+}
+
+.hotels-section.visible .hotel-card:nth-child(1) {
+    transition-delay: 0.50s;
+}
+
+.hotels-section.visible .hotel-card:nth-child(2) {
+    transition-delay: 0.70s;
+}
 /* =========================================================
    MÚSICA
 ========================================================= */
