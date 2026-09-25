@@ -957,7 +957,17 @@
 --hotel-button-padding-y: 12px;
 --hotel-button-padding-x: 25px;
 --hotel-button-font-size: 13px;
-
+/* =========================================================
+   ANIMACIÓN DE HOTEL
+========================================================= */
+--hotels-animation-distance: 35px;
+--hotels-animation-duration: 0.8s;
+--hotels-title-delay: 0.15s;
+--hotels-description-delay: 0.30s;
+--hotel1-delay: 0.50s;
+--hotel1-button-delay: 0.70s;
+--hotel2-delay: 0.70s;
+--hotel2-button-delay: 0.90s;
  
     /* ===== MÚSICA ===== */
     --music-right: 20px;
