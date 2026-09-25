@@ -923,7 +923,36 @@
 /* MOVIMIENTO INICIAL — BOTÓN */
 --rsvp-button-from-x: 0px;
 --rsvp-button-from-y: 45px;
-
+/* =========================================================
+   FORMULARIO DE CONFIRMACIÓN
+========================================================= */
+/* ESPACIOS */
+--rsvp-form-space-top: 35px;
+--rsvp-form-gap: 28px;
+--rsvp-field-gap: 10px;
+/* TAMAÑOS */
+--rsvp-label-size: 18px;
+--rsvp-input-size: 16px;
+--rsvp-option-size: 16px;
+/* COLORES */
+--rsvp-label-color: #f7f2e9;
+--rsvp-input-bg: rgba(255, 255, 255, .95);
+--rsvp-input-color: #2b241c;
+--rsvp-placeholder-color: rgba(80, 70, 60, .45);
+--rsvp-option-color: #f7f2e9;
+--rsvp-input-border-color: rgba(201, 164, 92, .45);
+--rsvp-input-focus-color: #c9a45c;
+/* CAMPOS */
+--rsvp-input-padding-y: 14px;
+--rsvp-input-padding-x: 16px;
+--rsvp-input-radius: 4px;
+/* OPCIONES */
+--rsvp-option-gap: 10px;
+--rsvp-radio-size: 18px;
+/* ACOMPAÑANTES */
+--rsvp-companion-gap: 12px;
+/* BOTÓN */
+--rsvp-button-space-top: 10px;
 
  /* =========================================================
    HOTELES
