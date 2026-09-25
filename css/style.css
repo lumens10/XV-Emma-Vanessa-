@@ -5219,6 +5219,52 @@ text-transform: uppercase;
     transition-delay: 0.70s;
 }
 /* =========================================================
+   HOTELES — ANIMACIÓN DE BOTONES
+========================================================= */
+
+.hotels-section .hotel-card .gold-button {
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+
+/* =========================================================
+   BOTONES CUANDO EL BLOQUE ESTÁ ACTIVO
+========================================================= */
+
+.hotels-section.visible .hotel-card .gold-button {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   RETRASO DE CADA BOTÓN
+========================================================= */
+
+.hotels-section.visible
+.hotel-card:nth-child(1)
+.gold-button {
+
+    transition-delay: 0.70s;
+}
+
+
+.hotels-section.visible
+.hotel-card:nth-child(2)
+.gold-button {
+
+    transition-delay: 0.90s;
+}
+/* =========================================================
    MÚSICA
 ========================================================= */
 
