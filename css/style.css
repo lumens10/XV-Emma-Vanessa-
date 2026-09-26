@@ -1027,7 +1027,7 @@
    FONDO
 ========================================================= */
 /* Imagen de fondo */
---footer-bg-image: url('../images/fondo foto brazo.jpg');
+--footer-bg-image: url('../images/fondo uva.jpg');
 /* Posición de la imagen de fondo */
 --footer-bg-x: 50%;
 --footer-bg-y: 50%;
@@ -3016,7 +3016,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         center center /
         cover no-repeat;
 }
