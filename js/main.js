@@ -541,7 +541,31 @@ const urlParams =
     new URLSearchParams(
         window.location.search
     );
+/* =====================================================
+   HOTELES — CONTROL DESDE LA URL
+===================================================== */
 
+const hotelParam =
+    urlParams.get("hotel");
+   /* =====================================================
+   HOTELES — MOSTRAR SEGÚN LA URL
+===================================================== */
+
+const hotelsSection =
+    document.querySelector(
+        ".hotels-section"
+    );
+
+
+if (
+    hotelsSection &&
+    hotelParam !== "1"
+) {
+
+    hotelsSection.style.display =
+        "none";
+
+}
 
 const paseParam =
     Number(
