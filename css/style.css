@@ -1270,7 +1270,7 @@ button {
             rgba(40, 15, 18, 0.18),
             rgba(40, 15, 18, 0.18)
         ),
-        url('../images/fondo apertura.jpg');
+        url('../images/uva cuadro.jpg');
 
     background-position: var(--opening-bg-x) var(--opening-bg-y);
 background-size: cover;
@@ -1645,7 +1645,7 @@ text-transform: uppercase;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo foto.jpg')
+        url('../images/fondo uva.jpg')
         var(--hero-bg-x)
         var(--hero-bg-y) /
         cover no-repeat;
@@ -2104,7 +2104,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/Fondo beige github.jpg")
+        url("../images/fondo durasno.jpg")
         center center / cover no-repeat;
 }
 
@@ -2133,7 +2133,7 @@ font-size: var(--section-text-size);
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url("../images/fondo foto acostada.jpg")
+        url("../images/fondo uva.jpg")
         var(--count-bg-x) var(--count-bg-y) / cover no-repeat;
 
     padding: var(--count-section-padding);
@@ -2261,7 +2261,7 @@ flex-shrink: 0;
     padding: var(--section-padding);
 
     background:
-        url("../images/Fondo beige github.jpg")
+        url("../images/fondo durasno.jpg")
         center center /
         cover
         no-repeat;
@@ -2576,7 +2576,7 @@ flex-shrink: 0;
             rgba(10, 8, 5, 0),
             rgba(10, 8, 5, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         var(--family-bg-x)
         var(--family-bg-y) /
         cover no-repeat;
@@ -2999,7 +2999,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/fondo con inicial.jpg')
+        url('../images/fondo uva.jpg')
         center center /
         cover no-repeat;
 }
@@ -3346,7 +3346,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo dorado.jpg')
         center center / cover no-repeat;
 }
 
@@ -3793,7 +3793,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo durasno.jpg')
         center center /
         cover no-repeat;
 
@@ -4046,7 +4046,7 @@ flex-shrink: 0;
             rgba(5, 4, 3, 0),
             rgba(5, 4, 3, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo durasno.jpg')
         center center /
         cover no-repeat;
 
@@ -4278,7 +4278,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo dorado.jpg')
         center center / cover no-repeat;
 }
 
@@ -4641,7 +4641,7 @@ flex-shrink: 0;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/Fondo beige github.jpg')
+        url('../images/fondo uva.jpg')
         center center / cover no-repeat;
 }
 
@@ -4789,7 +4789,7 @@ text-transform: uppercase;
 }
 
 
-/* 3 — NOHEMI */
+/* 3 — EMMA VANESSA */
 
 .pass-section .pass-card .pass-name {
     transform:
@@ -4871,7 +4871,7 @@ text-transform: uppercase;
 }
 
 
-/* 3 — NOHEMI */
+/* 3 — EMMA VANESSA */
 
 .pass-section.animate-content .pass-card .pass-name {
     transition-delay:
@@ -4914,7 +4914,7 @@ text-transform: uppercase;
             rgba(9, 8, 7, 0),
             rgba(9, 8, 7, 0)
         ),
-        url('../images/vino liso.jpg')
+        url('../images/fondo uva.jpg')
         center center / cover no-repeat;
  
     padding-bottom: var(--rsvp-bottom-padding);
@@ -5772,7 +5772,7 @@ cursor: pointer;
 
 
 /* =========================================================
-   TÍTULO — NOHEMI
+   TÍTULO — EMMA VANESSA
 ========================================================= */
 
 .footer h2 {
@@ -5808,7 +5808,7 @@ cursor: pointer;
 
 
 /* =========================================================
-   TEXTO — MIS XV · 2026
+   TEXTO — MIS XV · 2027
 ========================================================= */
 
 .footer p {
